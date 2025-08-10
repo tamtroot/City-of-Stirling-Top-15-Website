@@ -130,6 +130,19 @@ body {
     border-radius: 8px;
 }
 
+/* Album cover images: enforce a consistent visual size across albums */
+.album-card .card-img-top {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+@media (max-width: 576px) {
+    .album-card .card-img-top {
+        height: 180px;
+    }
+}
+
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
