@@ -686,4 +686,124 @@ address p {
     object-fit: contain;
     padding: 1rem;
     background-color: white;
+}
+
+/* Tournament Bracket Styles */
+.tournament-round {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.match-card {
+    background: #fff;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1rem;
+    min-width: 280px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.match-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.match-number {
+    background: #0d6efd;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.teams {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.team {
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 4px;
+    min-height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+    hyphens: auto;
+    min-width: 120px;
+    width: 100%;
+}
+
+.home-team {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: #dc3545;
+    font-weight: 500;
+}
+
+.away-team {
+    background-color: rgba(0, 123, 255, 0.1);
+    color: #007bff;
+    font-weight: 500;
+}
+
+.winner-team {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: #28a745;
+    font-weight: 600;
+    font-style: italic;
+    min-width: 120px;
+    width: 100%;
+}
+
+
+.vs {
+    margin: 0 0.5rem;
+    font-weight: bold;
+    color: #6c757d;
+}
+
+.final-match {
+    background: linear-gradient(135deg, #fff5f5, #f8f9fa);
+    border: 2px solid #ffc107;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .tournament-round {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .match-card {
+        min-width: 90%;
+        max-width: 350px;
+    }
+
+    .teams {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .team {
+        width: 100%;
+    }
+
+    .vs {
+        margin: 0.25rem 0;
+    }
 } 
