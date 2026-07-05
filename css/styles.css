@@ -759,6 +759,11 @@ address p {
     font-weight: 500;
 }
 
+.loser-team {
+    text-decoration: line-through;
+    opacity: 0.75;
+}
+
 .winner-team {
     background-color: rgba(40, 167, 69, 0.1);
     color: #28a745;
