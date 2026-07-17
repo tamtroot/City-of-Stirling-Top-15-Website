@@ -702,7 +702,7 @@ address p {
     border: 2px solid #e9ecef;
     border-radius: 8px;
     padding: 1rem;
-    min-width: 280px;
+    min-width: 360px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.2s ease-in-out;
 }
@@ -741,9 +741,8 @@ address p {
     display: flex;
     align-items: center;
     justify-content: center;
-    word-wrap: break-word;
-    hyphens: auto;
-    min-width: 120px;
+    white-space: nowrap;
+    min-width: 160px;
     width: 100%;
 }
 
@@ -769,7 +768,7 @@ address p {
     color: #28a745;
     font-weight: 600;
     font-style: italic;
-    min-width: 120px;
+    min-width: 160px;
     width: 100%;
 }
 
@@ -783,7 +782,7 @@ address p {
 .final-match {
     background: linear-gradient(135deg, #fff5f5, #f8f9fa);
     border: 2px solid #ffc107;
-    max-width: 400px;
+    max-width: 520px;
     margin: 0 auto;
 }
 
